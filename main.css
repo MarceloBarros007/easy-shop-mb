@@ -1,0 +1,181 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+.sobre-loja {
+    padding: 20px;
+    background-color: white;
+    margin: 20px 0;
+}
+
+.sobre-loja img {
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+}
+
+.sobre-loja p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.produtos {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.produtos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.produtos ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+.produtos li {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 22%;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.produtos li:hover {
+    transform: scale(1.05);
+}
+
+.produtos img {
+    max-width: 100%;
+    height: auto;
+}
+
+.produtos h3 {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.produtos p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.produtos strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #ff6347;
+}
+
+.produtos button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.produtos button:hover {
+    background-color: #ff6347;
+}
+
+@media screen and (max-width: 1024px) {
+    .produtos li {
+        width: 45%;
+    }
+
+    .sobre-loja img {
+        width: 100%;
+        float: none;
+        margin: 0 0 15px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .produtos li {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .produtos h3 {
+        font-size: 18px;
+    }
+
+    .produtos button {
+        font-size: 14px;
+    }
+}
